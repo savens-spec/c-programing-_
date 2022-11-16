@@ -5,6 +5,7 @@
     "version": "0.2.0",
     "configurations": [
         
+        
 
 
 
@@ -12,7 +13,7 @@
             "name": "(gdb) Attach",
             "type": "cppdbg",
             "request": "attach",
-            "program": "enter program name, for example ${workspaceFolder}/a.exe",,
+            "program": "enter program name, for example ${workspaceFolder}/a.exe",
             "MIMode": "gdb",
             "miDebuggerPath": "/path/to/gdb",
             "setupCommands": [
