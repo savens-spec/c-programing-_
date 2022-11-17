@@ -17,11 +17,35 @@ int main()
 
     for (int i = 0; i < numberOfQuestions ; i++)
     {
-        printf("**************************");
+        printf("**************************\n");
         printf("%s\n", questions[i]);
-        printf("**************************");
+        printf("**************************\n");
+
+        for (int j = (i * 4); j  < (i * 4 ) + 4; j++)
+        {
+            printf("%s\n", options[j]);
+
+        }
+
+        printf("guess: ");
+        scanf("%c", &guess);
+        scanf("%c"); //clear \n from input buffer
+
+        guess = toupper(guess);
+        if(guess == answers[i])
+        {
+            printf("CORRECT!\n");
+            score++;
+        }
+        else{
+            printf("WRONG!\n");
+        }
+        
     }
-     
+     printf("**************************\n");
+     prinf("FINAL SCORE: %d/%d\n", score, numberOfQuestions);
+     printf("**************************\n");
+
 
     return 0;
 }
